@@ -1,0 +1,63 @@
+/*#scoreboard {
+    
+}*/
+
+#scoreboard > header {
+    background-color: #e00026;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 21px;
+}
+
+#scoreboard > header h2,
+#scoreboard > header h3 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#scoreboard > header img {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    display: inline-block;
+}
+
+/*#scoreboard > header .media {
+    
+}*/
+
+#scoreboard > header .media .media-body {
+    vertical-align: middle;
+}
+
+#scoreboard > header .media .media-left img{
+    text-align: right;
+    /* width: 50%; */
+}
+
+#scoreboard > header .media .media-left img.ANNIVERSARY-logo {
+    text-align: right;
+    border-radius: 50%;
+}
+
+#scoreboard > section {
+    width: 100%;
+    margin: 0px auto;
+    display: table;
+}
+
+#scoreboard > section > aside {
+    display: table-cell;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 5px;
+    vertical-align: top;
+}
+
+#scoreboard > section > section {
+    box-sizing: border-box;
+    padding: 5px;
+    vertical-align: top;
+}

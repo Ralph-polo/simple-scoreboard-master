@@ -1,9 +1,13 @@
+:root {
+    --base-color: #0877bb;
+}
+
 .team {
     margin: 10px;
-    background-color: #e00026;
+    background-color: var(--base-color);
     border-radius: 20px;
     color: #ffffff;
-    border: solid 2px #e00026;
+    border: solid 2px var(--base-color);
     box-sizing: border-box;
 }
 
@@ -24,10 +28,10 @@
 
 .team .score_block .scores {
     display: table-cell;
-    width: 45%;
+    width: 50%;
     background-color: #fff;
     color: #069;
-    border: solid 2px #e00026;
+    border: solid 2px var(--base-color);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-left: auto;
@@ -63,5 +67,4 @@
 .team .score_block .score .number {
     margin: 0px;
     font-size: 70px;
-    line-height: 70px;
 }

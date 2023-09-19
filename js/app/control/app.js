@@ -3,7 +3,8 @@ requirejs.config({
     paths: {
         app: 'app',
         lib: 'lib'
-    }
+    },
+    urlArgs: "bust=" +  (new Date()).getTime()
 });
 
 require([

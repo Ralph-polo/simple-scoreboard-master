@@ -105,7 +105,7 @@ define([
         }
 
         onRender() {
-            this.getRegion('config').show( new ContestConfigView() );
+            // this.getRegion('config').show( new ContestConfigView() );
 
             window.Components.App.trigger('ControlBoard.DataUpdated', this.teams);
         }

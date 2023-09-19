@@ -29,10 +29,10 @@ define([
 
             if( this.element ) {
                 document.querySelector(this.element).innerHTML = rendered;
+                this.onRender(rendered);
+                this.trigger('render', rendered);
             }
 
-            this.onRender(rendered);
-            this.trigger('render', rendered);
 
             return rendered;
         }

@@ -3,11 +3,12 @@ requirejs.config({
     paths: {
         app: 'app',
         lib: 'lib'
-    }
+    },
+    urlArgs: "bust=" +  (new Date()).getTime()
 });
 
 require([
-    'jquery', 
+    'jquery',
     'app/scoreboard/views/scoreboard'
 ], function ($, Scoreboard) {
 
@@ -26,7 +27,10 @@ require([
 
         app_channel.on('Scoreboard.addRound', () => scoreboard.addRound() );
         app_channel.on('Scoreboard.addTeam', (team) => scoreboard.addTeam(team) );
-        app_channel.on('Scoreboard.teamUpdated', (team) => scoreboard.render() );
+        app_channel.on('Scoreboard.teamUpdated', (team) => {
+            console.log("Team updated called");
+            scoreboard.render()
+        });
         app_channel.on('Scoreboard.deleteTeam', (team) => scoreboard.deleteTeam(team) );
     }
 );

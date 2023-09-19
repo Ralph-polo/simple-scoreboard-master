@@ -1,20 +1,22 @@
-/*#scoreboard {
-    
-}*/
+#scoreboard {
+    --base-color: #0877bb;
+    font-family: 'Raleway', sans-serif;
+}
 
 #scoreboard > header {
-    background-color: #e00026;
+    background-color: var(--base-color);
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 5px;
     padding: 5px;
     font-size: 21px;
+    font-weight: 700;
 }
 
 #scoreboard > header h2,
 #scoreboard > header h3 {
     margin-top: 0px;
     margin-bottom: 5px;
+    font-weight: 400;
 }
 
 #scoreboard > header img {
@@ -25,7 +27,7 @@
 }
 
 /*#scoreboard > header .media {
-    
+
 }*/
 
 #scoreboard > header .media .media-body {
